@@ -5,18 +5,53 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>A. Parker Oakes</title>
+    <title>Parker Oakes</title>
     <style>
-        body {
-            color: rgb(136, 132, 132)
+        h1, h2 {
+            display: inline;
+                }
+        body, html {
+            height:100%;
+        }
+        /* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("CapturePO.PNG");
+
+  /* Set a specific height */
+  height: 25%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+}
+body {
+            color: rgb(136, 132, 132);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
         }
         ul {
+            margin: 0;
+            padding: 0;
             list-style-type: none;
             color: white;
             overflow: hidden;
-            background-color: rgb(80, 128, 231)
+            background-color: rgb(16, 43, 129)        
         }
-        li {
+        ul li {
+        list-style: name;
            float: left; 
         }
         li a {
@@ -27,64 +62,95 @@
             text-decoration: none;
         }
         li a:hover {
-            background-color: blue;
+            background-color: rgb(30, 153, 122);
             color: white;
         }
-           li b {
+        li {
             display: block;
             color: white;
             text-align: center;
             padding: 12px;
             text-decoration: none;
         }
-           li b {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
+        div.services{
+     text-align: center;
+}
+th, td {
+  padding: 5px;
+}
+        .footer {
+            float:center;
+             bottom: 50;
+             width: 100%;
+             align-items: center;
+             text-align: center;
+             font-size: 15px;
         }
-        div {
-    height: 400px;
-    width: 800px;
-    background: red;
-            }
     </style>
 </head>
 
 <body>
+<img src="CapturePO.PNG"/>
+<div class="hero image">
+    <div class="hero-text">
+        <h1>Parker Oakes</h1>
+        <br><a href="mailto:alan.p.oakes@gmail.com"><button>Email Me</button></a>
+    </div>
+</div>
 
-    <img src="CapturePO.PNG" alt="Parker Oakes">
-  <p>
-      <div>
-    <h1>Parker Oakes</h1>
-    <h3>Data Scientist & Data Developer</h3>
-      </div>
-  </p>
-      <ul id="a">
-        <li><a href="https://inandoutdata.wordpress.com/">Data Science Portfolio</a></li>
-        <li><a href="http://www.rpubs.com/alanoakes">RPubs Portfolio</a></li>
-        <li><a href="https://github.com/alanoakes">GitHub Repositories</a></li>
-     </ul>
- <p>
-    Hi, I am Parker Oakes and I am a data scientist and currently working in the mulltifamily industry. 
-<br>Thank you for visiting my professional site! You will find multiple items here that will suit your 
-<br>professional data interests. Also, you can download my <a href="Parker.Oakes.Resume.pdf">PRINTABLE RESUME BY CLICKING HERE</a>. 
-<br>My goal is to resolve profit-gaps in commerce by designing and developing innovative, interactive 
-<br>and machine-learning applications and solutions that humanize customer and client needs.
-    </p>
-  <p>
-Sincerely,
-   <br> Parker Oakes
-  </p>
-  <p>
-    "My greatest strength as a consultant is to be ignorant and ask a few questions."<br>
-    <em> ~ Peter F. Drucker</em>
-  </p>  
-    <ul="b">
-        <li>alan.p.oakes@gmail.com</li>
-        <li>(901) 257-9441</li>
-        <li>Memphis, TN</li>
     <ul>
+        <li><a href="Parker.Oakes.Resume.pdf">Resume</a></li>
+        <li><a href="https://inandoutdata.wordpress.com/">Blog</a></li>
+        <li><a href="http://www.rpubs.com/alanoakes">RPubs Portfolio</a></li>
+        <li><a href="https://github.com/alanoakes">GitHub Repos</a></li>
+     </ul>
+    </div>
+<p>
+    Hi! I am Parker Oakes and I am a data scientist and freelancer.
+ I design and develop interactive and machine-learning applications and 
+ solutions. I currently live in Memphis, TN with my beautiful wife and two amazing children.
+</p>
+<p>
+    I am excited at the opportunity to share how the following data science services
+    can truly bring dynamic solutions to your business needs!
+    Feel free to contact me for pricing or knowledge regarding how data science can benefit your business.
+</p>
+
+        <div class="services">
+                  <h1>DATA SERVICES</h1>
+        </div>
+        <p></p>
+        <hr>
+        <br>
+        <table style="width:100%">
+                <tr>
+                  <th>Data Analysis</th>
+                  <th>Data Automation</th> 
+                  <th>Data Visualization</th>
+                </tr>
+                <tr>
+                  <td>Prediction</td>
+                  <td>File Conversion</td> 
+                  <td>Dashboarding</td>
+                </tr>
+                <tr>
+                  <td>Data Mining</td>
+                  <td>ETL</td> 
+                  <td>Web Development</td>
+                </tr>
+                <tr>
+                  <td>EDA</td>
+                  <td>Data Storage</td> 
+                  <td>Reporting</td>
+                </tr>
+              </table>
+
+<div class="footer">
+        <ul>
+           <li>(901) 257-9441</li>
+           <li>8907 Fulton Cove, Cordova, TN 38016</li>
+        <ul>
+</div>
+
 </body>
 </html>
